@@ -12,6 +12,11 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 library.add(faCoffee)
 
+import VueMaterial from 'vue-material'
+import 'vue-material/dist/vue-material.min.css'
+
+Vue.use(VueMaterial)
+
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
