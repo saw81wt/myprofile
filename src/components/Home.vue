@@ -1,8 +1,7 @@
 <template>
   <div class="md-layout md-gutter md-alignment-center" style="margin-top: 50px;">
-    <!-- <div class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100"></div> -->
     <md-content>
-      <md-avatar class="md-large"><img src="../assets/sotaro.png"></md-avatar>
+      <md-avatar class="md-large"><img src="../assets/sotaro.png" v-on:click="toFoo"></md-avatar>
       <md-tabs md-alignment="centered" style="margin: 30px 10px;">
         <md-tab md-label="About me">
           <md-table style="margin: 1rem 1rem">
@@ -68,6 +67,9 @@ name: 'MyProfile',
     },
     isLanguage: function(){
       this.flag = false
+    },
+    toFoo: function(){
+      this.$router.push("/foo")
     }
   }
 }
@@ -98,6 +100,5 @@ a {
       display: block;
       background: md-get-palette-color(purple, 200);
       content: " ";
-    
 }
 </style>

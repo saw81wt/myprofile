@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import MyProfile from './components/MyProfile.vue'
+import MyProfile from './components/Home.vue'
 // import { faCoffee } from '@fortawesome/fa-twitter'
 
 export default {

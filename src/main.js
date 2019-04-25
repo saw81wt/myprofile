@@ -1,26 +1,36 @@
 import Vue from 'vue'
-import App from './App.vue'
-
-import BootstrapVue from 'bootstrap-vue'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-Vue.use(BootstrapVue)
+// import App from './App.vue'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 library.add(faCoffee)
 
 import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.min.css'
 
-Vue.use(VueMaterial)
+import VueRouter from 'vue-router'
 
-Vue.component('font-awesome-icon', FontAwesomeIcon)
+Vue.use(VueRouter)
+Vue.use(VueMaterial)
 
 Vue.config.productionTip = false
 
+const Foo = { template: '<div>foo</div>' }
+const Bar = { template: '<div>bar</div>' }
+import Home from "./components/Home.vue"
+
+const routes = [
+  { path: '/foo', component: Foo },
+  { path: '/bar', component: Bar }
+]
+
+const router = new VueRouter({
+  routes // `routes: routes` の短縮表記
+})
+
 new Vue({
-  render: h => h(App),
+  router,
+  component: {Home},
+  template: 'Home'
 }).$mount('#app')
