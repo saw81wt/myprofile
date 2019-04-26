@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <div id="nav">
-      <printTitle msg="Hello Sotaro's world" @onFlag="flag=!flag"/>
       <font-awesome-icon v-if="flag" v-on:click="goHome" icon="home"/>
+      <printTitle msg="Hello Sotaro's world" @onFlag="flag=!flag"/>
+
     </div>
     <!-- <router-link to="/">Home</router-link> |
     <router-link to="/skills">Skills</router-link> | 

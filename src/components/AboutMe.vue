@@ -22,7 +22,7 @@ export default {
         {key: "Name", val: "Sotaro Maehara"},
         {key: "Age", val: "25"},
         {key:"Place of Birth", val: "Kagoshima"},
-        {key:"Like", val: "e-sports"}
+        {key:"Like", val: "e-sports watching"}
       ],
     }
   },

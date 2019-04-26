@@ -39,6 +39,7 @@
 </template>
 
 <script>
+
 export default {
   props:[
     'msg'
@@ -55,7 +56,7 @@ export default {
       this.flag = !this.flag
       this.$emit('onFlag')
     }
-  }
+  },
 }
 </script>
 

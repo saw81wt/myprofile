@@ -1,7 +1,9 @@
 <template>
   <div>
     <printTitle msg="CV" @onFlag="cvFlag=!cvFlag"/>
-    <Vc v-if="cvFlag"/>
+    <transition appear>
+      <Vc v-if="cvFlag"/>
+    </transition>
   </div>
 </template>
 
