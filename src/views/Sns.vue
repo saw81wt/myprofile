@@ -27,10 +27,10 @@ export default {
     return {
       snsFlag: false,
       sns: [
-        {key: "Twitter", url:"https://twitter.com/saw_poke?lang=ja", text:"くだらないこと呟いてます．"}, 
-        {key: "Github", url:"https://github.com/sawlow81wt", text:"たいした成果物はないです．見ないでください．"},
+        {key: "Twitter", url:"https://twitter.com/saw_poke?lang=ja", text:"くだらないことだったり，くだらなくないことだったり呟いてます．でもやっぱりくだらないことの方が多いです．"}, 
+        {key: "Github", url:"https://github.com/sawlow81wt", text:"たいした成果物はないです．見ないでください．絶対に見ないでください．"},
         {key: "instagram", url:"https://www.instagram.com/sotaro.8484/", text:"僕は陰キャなのであまり使うことはありません．たまに料理の写真あげます．"},
-        {key: "Facebook", url:"https://www.facebook.com/profile.php?id=100004748167095", text:"ほぼ使っていません．たまに名刺代わりに使ってました．"},
+        {key: "Facebook", url:"https://www.facebook.com/profile.php?id=100004748167095", text:"ほぼ使っていません．"},
         {key: "atcoder", url:"https://atcoder.jp/users/sawlow", text:"最近始めました!!．とりあえず緑を目指したいです．"},
         {key: "kaggle", url:"https://www.kaggle.com/sawlow81wt", text: "最近始めました（part2）．一緒に勉強会とかしましょう！"}             
       ]
