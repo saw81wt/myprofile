@@ -1,11 +1,11 @@
 <template>
-  <div class="md-layout md-gutter md-alignment-center" style="margin-top: 50px;">
-  <md-table style="margin: 1rem 1rem">
-    <md-table-row v-for="item in language" v-bind:key="item.key">
-      <md-table-cell>{{item.key}}</md-table-cell>
-      <md-table-cell>{{item.val}}</md-table-cell>
-    </md-table-row>
-  </md-table>
+  <div>
+    <md-table style="margin: 1rem 1rem">
+      <md-table-row v-for="item in cv" v-bind:key="item.key">
+        <md-table-cell>{{item.key}}</md-table-cell>
+        <md-table-cell>{{item.val}}</md-table-cell>
+      </md-table-row>
+    </md-table>
   </div>
 </template>
 
@@ -17,7 +17,7 @@ export default {
   data() {
     return {
       flag: true,
-      language: [
+      cv: [
         {key: "H19.4〜H22.3", val: "姶良市立帖佐中学校"},
         {key: "H22.4〜H25.3", val: "鹿児島情報高等学校情報システム科情報システムコース"},
         {key: "H25.4〜H29.3", val: "鹿児島大学工学部情報生体システム工学科"},

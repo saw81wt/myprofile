@@ -1,30 +1,17 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <font-awesome-icon v-if="flag" v-on:click="goHome" icon="home"/>
-      <printTitle msg="Hello Sotaro's world" @onFlag="flag=!flag"/>
-
-    </div>
+  <div id="app" style="margin-top:50px">
+      <!-- <font-awesome-icon v-if="flag" v-on:click="goHome" icon="home"/> -->
     <!-- <router-link to="/">Home</router-link> |
     <router-link to="/skills">Skills</router-link> | 
     <router-link to="/sns">SNS</router-link> -->
-    <router-view v-if="flag"/>
+    <router-view />
   </div>
 </template>
 
 
 <script>
-import printTitle from "@/components/printTitle"
 
 export default {
-  data(){
-    return {
-      flag: false,
-    }
-  },
-  components: {
-    printTitle
-  },
   methods: {
     goHome: function(){
       this.$router.push({path: "/"})
@@ -34,13 +21,6 @@ export default {
 </script>
 
 <style>
-.md-layout-item{
-  width: 15em;
-  height: 2em;
-}
-.md-layout-item::after{
-  height: 0px;
-}
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

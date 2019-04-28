@@ -1,14 +1,14 @@
 <template>
-  <div class="md-layout md-gutter md-alignment-center" style="margin-top: 50px;">
-    <md-content>
+  <div style="margin: 50px 10px 5px 5px;">
       <div v-if="flag">
-
-      <transition appear>
-        <span class="md-display-2">{{msg}}</span>
-      </transition>
-      <font-awesome-icon v-on:click="execPrint" style="margin-left: 10px;margin-bottom: 30px;" icon="times"/>
+        <font-awesome-icon v-on:click="execPrint" style="float: right; margin-bottom:10px" icon="times"/>
+        <transition appear>
+          <div style="width:90%">
+            <span class="md-display-1">{{msg}}</span>
+          </div>
+        </transition>
       </div>
-      <div v-else>
+      <div v-else style="width:90%;margin:auto">
         <div class="md-layout-item">
           <md-field>
             <md-select v-model="lang" name="movie" id="movie">
@@ -18,7 +18,7 @@
             </md-select>
           </md-field>
         </div>
-        <div  class="md-layout" style="border: solid;width:100%;">
+        <div  class="md-layout" style="border: solid;">
           <div class="md-layout-item">
             <p style="text-align: left; margin:0.5em 0 0 1rem;">
             > <span class="bule-color">{{lang}}</span>
@@ -34,7 +34,7 @@
           </div>
         </div>
       </div>
-    </md-content>
+
   </div>
 </template>
 

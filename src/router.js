@@ -13,20 +13,5 @@ export default new Router({
       name: 'home',
       component: Home
     },
-    {
-      path: '/work',
-      name: 'work',
-      component: () => import(/* webpackChunkName: "about" */ './views/Work.vue')
-    },
-    {
-      path: '/hack',
-      name: 'hack',
-      component: () => import(/* webpackChunkName: "about" */ './views/Hack.vue')
-    },
-    {
-      path: '/sns',
-      name: 'sns',
-      component: () => import(/* webpackChunkName: "about" */ './views/Sns.vue')
-    },
   ]
 })

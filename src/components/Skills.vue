@@ -6,7 +6,6 @@
         <md-table-cell>{{item.val}}</md-table-cell>
       </md-table-row>
     </md-table>
-  
   </div>
 </template>
 
