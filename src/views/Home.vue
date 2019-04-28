@@ -26,7 +26,7 @@
     </div>
 
 
-    <printTitle msg="SNS" @onFlag="snsFlag=!snsFlag"/>
+    <printTitle msg="Links" @onFlag="snsFlag=!snsFlag"/>
     <div v-if="snsFlag">
       <transition appear>
         <sns />
